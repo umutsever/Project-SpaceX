@@ -147,8 +147,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bD8-AV-0fD">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zqj-1z-NwX">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zqj-1z-NwX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="732"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK7-wg-mZv">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
@@ -202,7 +202,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vk-kA-WhT">
-                                                <rect key="frame" x="0.0" y="172" width="414" height="350"/>
+                                                <rect key="frame" x="0.0" y="192" width="414" height="350"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past Launches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpq-om-LCJ">
                                                         <rect key="frame" x="16" y="16" width="382" height="26"/>
@@ -213,21 +213,21 @@
                                                         <color key="textColor" systemColor="systemIndigoColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CLU-9P-87e">
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CLU-9P-87e">
                                                         <rect key="frame" x="0.0" y="50" width="414" height="300"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="300" id="tIY-0s-Qw2"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pSE-Qu-WPI">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="0.0" id="pSE-Qu-WPI">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="15" minY="0.0" maxX="75" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0G2-eQ-GLW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="15" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kYe-D6-EpO">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -235,6 +235,10 @@
                                                                 </collectionViewCellContentView>
                                                             </collectionViewCell>
                                                         </cells>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="e49-lz-J8f" id="A3f-vT-LKY"/>
+                                                            <outlet property="delegate" destination="e49-lz-J8f" id="p0M-c6-xs0"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,7 +253,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcd-5A-ivK">
-                                                <rect key="frame" x="0.0" y="522" width="414" height="170"/>
+                                                <rect key="frame" x="0.0" y="562" width="414" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Launches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-yQ-Bh6">
                                                         <rect key="frame" x="16" y="16" width="382" height="26"/>
@@ -310,7 +314,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ixe-MR-JN6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bD8-AV-0fD" firstAttribute="top" secondItem="ixe-MR-JN6" secondAttribute="top" id="Es2-Q5-uWJ"/>
                             <constraint firstItem="bD8-AV-0fD" firstAttribute="leading" secondItem="ixe-MR-JN6" secondAttribute="leading" id="UhX-oM-GDh"/>
@@ -320,6 +324,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uFE-rL-79l"/>
                     <connections>
+                        <outlet property="pastLaunchesCollectionView" destination="CLU-9P-87e" id="Ii4-jE-MBf"/>
                         <outlet property="rocketCollectionView" destination="xIx-8r-iQ0" id="ZJS-uq-Urt"/>
                     </connections>
                 </viewController>

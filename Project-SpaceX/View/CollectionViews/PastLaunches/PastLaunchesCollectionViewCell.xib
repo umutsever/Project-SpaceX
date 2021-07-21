@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PastLaunchesCollectionViewCell" id="gTV-IL-0wX" customClass="PastLaunchesCollectionViewCell" customModule="Project_SpaceX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8M-uV-esi" customClass="CardView" customModule="Project_SpaceX" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-bn-Qsy">
+                                <rect key="frame" x="8" y="8" width="164" height="284"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agW-2s-ive">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-d0-OVs">
+                                        <rect key="frame" x="0.0" y="30.5" width="164" height="203"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KM-Rk-TjG">
+                                        <rect key="frame" x="0.0" y="241.5" width="164" height="16"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOG-qY-AU8">
+                                        <rect key="frame" x="0.0" y="265.5" width="164" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B5M-bn-Qsy" secondAttribute="trailing" constant="8" id="1tJ-6i-mfg"/>
+                            <constraint firstAttribute="height" constant="300" id="Cda-YP-tyS"/>
+                            <constraint firstAttribute="width" constant="180" id="DbC-ve-yJu"/>
+                            <constraint firstItem="B5M-bn-Qsy" firstAttribute="top" secondItem="H8M-uV-esi" secondAttribute="top" constant="8" id="N46-2h-brc"/>
+                            <constraint firstAttribute="bottom" secondItem="B5M-bn-Qsy" secondAttribute="bottom" constant="8" id="rzc-u2-ZaJ"/>
+                            <constraint firstItem="B5M-bn-Qsy" firstAttribute="leading" secondItem="H8M-uV-esi" secondAttribute="leading" constant="8" id="sda-5N-GuN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="H8M-uV-esi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H6O-s6-hXj"/>
+                <constraint firstAttribute="trailing" secondItem="H8M-uV-esi" secondAttribute="trailing" id="WHL-VD-KeI"/>
+                <constraint firstAttribute="bottom" secondItem="H8M-uV-esi" secondAttribute="bottom" id="kdK-Wp-0lp"/>
+                <constraint firstItem="H8M-uV-esi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zOy-66-snU"/>
+            </constraints>
+            <size key="customSize" width="223" height="301"/>
+            <connections>
+                <outlet property="launchDetailLabel" destination="iOG-qY-AU8" id="4Ev-cY-a0z"/>
+                <outlet property="launchYearLabel" destination="8KM-Rk-TjG" id="YQf-2B-Z0G"/>
+                <outlet property="missionNameLabel" destination="agW-2s-ive" id="mKI-Xy-5jD"/>
+                <outlet property="missionPatchImage" destination="LEZ-d0-OVs" id="MYm-cc-O3z"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="159.04017857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

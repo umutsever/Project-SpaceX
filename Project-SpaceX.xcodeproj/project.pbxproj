@@ -12,6 +12,9 @@
 		1132BC6A26A8BAB30063FACC /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132BC6926A8BAB30063FACC /* RocketModel.swift */; };
 		1132BC6C26A8BE570063FACC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132BC6B26A8BE570063FACC /* String+Extension.swift */; };
 		1132BC6F26A8C63D0063FACC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132BC6E26A8C63D0063FACC /* CardView.swift */; };
+		1132BC7426A8CB190063FACC /* PastLaunchesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132BC7226A8CB190063FACC /* PastLaunchesCollectionViewCell.swift */; };
+		1132BC7526A8CB190063FACC /* PastLaunchesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1132BC7326A8CB190063FACC /* PastLaunchesCollectionViewCell.xib */; };
+		1132BC7726A8CEE30063FACC /* PastLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132BC7626A8CEE30063FACC /* PastLaunchModel.swift */; };
 		11FAC36F26A84A39003D50D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC36E26A84A39003D50D8 /* AppDelegate.swift */; };
 		11FAC37126A84A39003D50D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC37026A84A39003D50D8 /* SceneDelegate.swift */; };
 		11FAC37326A84A39003D50D8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC37226A84A39003D50D8 /* OnboardingViewController.swift */; };
@@ -31,6 +34,9 @@
 		1132BC6926A8BAB30063FACC /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
 		1132BC6B26A8BE570063FACC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1132BC6E26A8C63D0063FACC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1132BC7226A8CB190063FACC /* PastLaunchesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1132BC7326A8CB190063FACC /* PastLaunchesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastLaunchesCollectionViewCell.xib; sourceTree = "<group>"; };
+		1132BC7626A8CEE30063FACC /* PastLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchModel.swift; sourceTree = "<group>"; };
 		11FAC36B26A84A39003D50D8 /* Project-SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-SpaceX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FAC36E26A84A39003D50D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FAC37026A84A39003D50D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,8 +69,8 @@
 		1132BC6426A8B7FD0063FACC /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
-				1132BC6526A8B8500063FACC /* RocketCollectionViewCell.swift */,
-				1132BC6626A8B8500063FACC /* RocketCollectionViewCell.xib */,
+				1132BC7126A8CAF70063FACC /* PastLaunches */,
+				1132BC7026A8CAEC0063FACC /* Rocket */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -75,6 +81,24 @@
 				1132BC6E26A8C63D0063FACC /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		1132BC7026A8CAEC0063FACC /* Rocket */ = {
+			isa = PBXGroup;
+			children = (
+				1132BC6526A8B8500063FACC /* RocketCollectionViewCell.swift */,
+				1132BC6626A8B8500063FACC /* RocketCollectionViewCell.xib */,
+			);
+			path = Rocket;
+			sourceTree = "<group>";
+		};
+		1132BC7126A8CAF70063FACC /* PastLaunches */ = {
+			isa = PBXGroup;
+			children = (
+				1132BC7226A8CB190063FACC /* PastLaunchesCollectionViewCell.swift */,
+				1132BC7326A8CB190063FACC /* PastLaunchesCollectionViewCell.xib */,
+			);
+			path = PastLaunches;
 			sourceTree = "<group>";
 		};
 		11FAC36226A84A39003D50D8 = {
@@ -135,6 +159,7 @@
 			children = (
 				11FAC38A26A84FC8003D50D8 /* OnboardingSlides.swift */,
 				1132BC6926A8BAB30063FACC /* RocketModel.swift */,
+				1132BC7626A8CEE30063FACC /* PastLaunchModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +285,7 @@
 				1132BC6826A8B8510063FACC /* RocketCollectionViewCell.xib in Resources */,
 				11FAC37B26A84A3C003D50D8 /* LaunchScreen.storyboard in Resources */,
 				11FAC37826A84A3C003D50D8 /* Assets.xcassets in Resources */,
+				1132BC7526A8CB190063FACC /* PastLaunchesCollectionViewCell.xib in Resources */,
 				11FAC37626A84A39003D50D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,9 +345,11 @@
 				11FAC36F26A84A39003D50D8 /* AppDelegate.swift in Sources */,
 				11FAC38B26A84FC8003D50D8 /* OnboardingSlides.swift in Sources */,
 				11FAC38926A84D6C003D50D8 /* UIView+Extension.swift in Sources */,
+				1132BC7726A8CEE30063FACC /* PastLaunchModel.swift in Sources */,
 				11FAC37126A84A39003D50D8 /* SceneDelegate.swift in Sources */,
 				11FAC39126A85F63003D50D8 /* HomeViewController.swift in Sources */,
 				1132BC6C26A8BE570063FACC /* String+Extension.swift in Sources */,
+				1132BC7426A8CB190063FACC /* PastLaunchesCollectionViewCell.swift in Sources */,
 				1132BC6F26A8C63D0063FACC /* CardView.swift in Sources */,
 				11FAC38D26A8526A003D50D8 /* OnboardingCollectionViewCell.swift in Sources */,
 			);

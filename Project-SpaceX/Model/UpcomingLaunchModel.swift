@@ -1,16 +1,15 @@
 //
-//  PastLaunchModel.swift
+//  UpcomingLaunchModel.swift
 //  Project-SpaceX
 //
-//  Created by Umut Sever on 22.07.2021.
+//  Created by Umut Sever on 23.07.2021.
 //
 
 import Foundation
 
-struct PastLaunchModel {
+struct UpcomingLaunchModel {
     let mission_name: String
     let launch_year: String
     let links: String
     let details: String
 }
-

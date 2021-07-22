@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpcomingLaunchesCollectionViewCell" id="gTV-IL-0wX" customClass="UpcomingLaunchesCollectionViewCell" customModule="Project_SpaceX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M17-Tq-M8A" customClass="CardView" customModule="Project_SpaceX" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="116"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wkN-8u-XKs">
+                                <rect key="frame" x="8" y="8" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KuM-LA-JeC"/>
+                                    <constraint firstAttribute="height" constant="100" id="Kvv-Yo-RXW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="rcn-Hw-a3I">
+                                <rect key="frame" x="125" y="8" width="141" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urs-HQ-j4F">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnU-Dj-F8Z">
+                                        <rect key="frame" x="0.0" y="31" width="141" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Details that represented in the spesific section." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4y-r7-ec5">
+                                        <rect key="frame" x="0.0" y="61.5" width="141" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="11"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wkN-8u-XKs" firstAttribute="leading" secondItem="M17-Tq-M8A" secondAttribute="leading" constant="8" id="49Q-q1-D7p"/>
+                            <constraint firstItem="rcn-Hw-a3I" firstAttribute="bottom" secondItem="wkN-8u-XKs" secondAttribute="bottom" id="61c-At-FRP"/>
+                            <constraint firstItem="wkN-8u-XKs" firstAttribute="top" secondItem="M17-Tq-M8A" secondAttribute="top" constant="8" id="78t-BK-fE5"/>
+                            <constraint firstAttribute="height" constant="116" id="B7a-zv-f3o"/>
+                            <constraint firstItem="rcn-Hw-a3I" firstAttribute="top" secondItem="wkN-8u-XKs" secondAttribute="top" id="Ck3-Vp-4lI"/>
+                            <constraint firstAttribute="width" constant="274" id="Tmg-Gl-FJe"/>
+                            <constraint firstItem="rcn-Hw-a3I" firstAttribute="leading" secondItem="wkN-8u-XKs" secondAttribute="trailing" constant="17" id="Yy6-R1-OYR"/>
+                            <constraint firstAttribute="trailing" secondItem="rcn-Hw-a3I" secondAttribute="trailing" constant="8" id="l8E-zX-wtc"/>
+                            <constraint firstAttribute="bottom" secondItem="wkN-8u-XKs" secondAttribute="bottom" constant="8" id="lBd-SB-uhF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="M17-Tq-M8A" secondAttribute="bottom" id="MHb-au-h41"/>
+                <constraint firstItem="M17-Tq-M8A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SKE-Uw-lGq"/>
+                <constraint firstItem="M17-Tq-M8A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VJ1-Ge-Dhi"/>
+                <constraint firstAttribute="trailing" secondItem="M17-Tq-M8A" secondAttribute="trailing" id="b93-bX-hPb"/>
+            </constraints>
+            <size key="customSize" width="274" height="114"/>
+            <connections>
+                <outlet property="missionDetailLabel" destination="o4y-r7-ec5" id="HB6-Si-kNE"/>
+                <outlet property="missionNameLabel" destination="urs-HQ-j4F" id="3yc-j5-rAz"/>
+                <outlet property="missionPatchImage" destination="wkN-8u-XKs" id="X0q-JR-mzv"/>
+                <outlet property="missionYearLabel" destination="wnU-Dj-F8Z" id="KZu-UZ-k3n"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="105.80357142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

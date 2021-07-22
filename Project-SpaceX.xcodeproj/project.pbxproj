@@ -15,6 +15,9 @@
 		1132BC7426A8CB190063FACC /* PastLaunchesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132BC7226A8CB190063FACC /* PastLaunchesCollectionViewCell.swift */; };
 		1132BC7526A8CB190063FACC /* PastLaunchesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1132BC7326A8CB190063FACC /* PastLaunchesCollectionViewCell.xib */; };
 		1132BC7726A8CEE30063FACC /* PastLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132BC7626A8CEE30063FACC /* PastLaunchModel.swift */; };
+		11C17D2626AA23790087C9B1 /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C17D2526AA23790087C9B1 /* UpcomingLaunchModel.swift */; };
+		11C17D2926AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C17D2726AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift */; };
+		11C17D2A26AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11C17D2826AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib */; };
 		11FAC36F26A84A39003D50D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC36E26A84A39003D50D8 /* AppDelegate.swift */; };
 		11FAC37126A84A39003D50D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC37026A84A39003D50D8 /* SceneDelegate.swift */; };
 		11FAC37326A84A39003D50D8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC37226A84A39003D50D8 /* OnboardingViewController.swift */; };
@@ -37,6 +40,9 @@
 		1132BC7226A8CB190063FACC /* PastLaunchesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1132BC7326A8CB190063FACC /* PastLaunchesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastLaunchesCollectionViewCell.xib; sourceTree = "<group>"; };
 		1132BC7626A8CEE30063FACC /* PastLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchModel.swift; sourceTree = "<group>"; };
+		11C17D2526AA23790087C9B1 /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
+		11C17D2726AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesCollectionViewCell.swift; sourceTree = "<group>"; };
+		11C17D2826AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingLaunchesCollectionViewCell.xib; sourceTree = "<group>"; };
 		11FAC36B26A84A39003D50D8 /* Project-SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-SpaceX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FAC36E26A84A39003D50D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FAC37026A84A39003D50D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,8 +75,9 @@
 		1132BC6426A8B7FD0063FACC /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
-				1132BC7126A8CAF70063FACC /* PastLaunches */,
 				1132BC7026A8CAEC0063FACC /* Rocket */,
+				1132BC7126A8CAF70063FACC /* PastLaunches */,
+				11C17D2426AA233F0087C9B1 /* UpcomingLaunches */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -99,6 +106,15 @@
 				1132BC7326A8CB190063FACC /* PastLaunchesCollectionViewCell.xib */,
 			);
 			path = PastLaunches;
+			sourceTree = "<group>";
+		};
+		11C17D2426AA233F0087C9B1 /* UpcomingLaunches */ = {
+			isa = PBXGroup;
+			children = (
+				11C17D2726AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift */,
+				11C17D2826AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib */,
+			);
+			path = UpcomingLaunches;
 			sourceTree = "<group>";
 		};
 		11FAC36226A84A39003D50D8 = {
@@ -160,6 +176,7 @@
 				11FAC38A26A84FC8003D50D8 /* OnboardingSlides.swift */,
 				1132BC6926A8BAB30063FACC /* RocketModel.swift */,
 				1132BC7626A8CEE30063FACC /* PastLaunchModel.swift */,
+				11C17D2526AA23790087C9B1 /* UpcomingLaunchModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +304,7 @@
 				11FAC37826A84A3C003D50D8 /* Assets.xcassets in Resources */,
 				1132BC7526A8CB190063FACC /* PastLaunchesCollectionViewCell.xib in Resources */,
 				11FAC37626A84A39003D50D8 /* Main.storyboard in Resources */,
+				11C17D2A26AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,11 +364,13 @@
 				11FAC38B26A84FC8003D50D8 /* OnboardingSlides.swift in Sources */,
 				11FAC38926A84D6C003D50D8 /* UIView+Extension.swift in Sources */,
 				1132BC7726A8CEE30063FACC /* PastLaunchModel.swift in Sources */,
+				11C17D2926AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift in Sources */,
 				11FAC37126A84A39003D50D8 /* SceneDelegate.swift in Sources */,
 				11FAC39126A85F63003D50D8 /* HomeViewController.swift in Sources */,
 				1132BC6C26A8BE570063FACC /* String+Extension.swift in Sources */,
 				1132BC7426A8CB190063FACC /* PastLaunchesCollectionViewCell.swift in Sources */,
 				1132BC6F26A8C63D0063FACC /* CardView.swift in Sources */,
+				11C17D2626AA23790087C9B1 /* UpcomingLaunchModel.swift in Sources */,
 				11FAC38D26A8526A003D50D8 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

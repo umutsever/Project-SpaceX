@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var rocketCollectionView: UICollectionView!
     @IBOutlet weak var pastLaunchesCollectionView: UICollectionView!
+    @IBOutlet weak var upcomingLaunchesCollectionView: UICollectionView!
     
     var rockets: [RocketModel] = [
         .init(flickr_images: ["https://imgur.com/DaCfMsj.jpg"], rocket_name: "Falcon 1", rocket_id: "falcon"),
@@ -25,6 +26,13 @@ class HomeViewController: UIViewController {
         .init(mission_name: "Falcon", launch_year: "2006", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "Engine failure at 33 seconds and loss of vehicle")
     ]
     
+    var upcomingLaunches: [UpcomingLaunchModel] = [
+        .init(mission_name: "Falcon", launch_year: "2020", links: "https://imgur.com/jHNFSY6.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."),
+        .init(mission_name: "Falcon", launch_year: "2020", links: "https://imgur.com/jHNFSY6.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."),
+        .init(mission_name: "Falcon", launch_year: "2020", links: "https://imgur.com/jHNFSY6.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."),
+        .init(mission_name: "Falcon", launch_year: "2020", links: "https://imgur.com/jHNFSY6.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo.")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +44,8 @@ class HomeViewController: UIViewController {
         rocketCollectionView.register(UINib(nibName: RocketCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: RocketCollectionViewCell.identifier)
         
         pastLaunchesCollectionView.register(UINib(nibName: PastLaunchesCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: PastLaunchesCollectionViewCell.identifier)
+        
+        upcomingLaunchesCollectionView.register(UINib(nibName: UpcomingLaunchesCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: UpcomingLaunchesCollectionViewCell.identifier)
     }
 
 }
@@ -48,6 +58,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return pastLaunches.count
         case rocketCollectionView:
             return rockets.count
+        case upcomingLaunchesCollectionView:
+            return upcomingLaunches.count
         default:
             return 0
         }
@@ -65,6 +77,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case rocketCollectionView:
             let cell = rocketCollectionView.dequeueReusableCell(withReuseIdentifier: RocketCollectionViewCell.identifier, for: indexPath) as! RocketCollectionViewCell
             cell.setup(rockets[indexPath.row])
+            return cell
+        case upcomingLaunchesCollectionView:
+            let cell = upcomingLaunchesCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingLaunchesCollectionViewCell.identifier, for: indexPath) as! UpcomingLaunchesCollectionViewCell
+            cell.setup(upcomingLaunches[indexPath.row])
             return cell
           
         default:

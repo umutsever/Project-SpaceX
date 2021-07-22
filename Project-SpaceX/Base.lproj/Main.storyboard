@@ -337,6 +337,79 @@
             </objects>
             <point key="canvasLocation" x="1731.8840579710147" y="83.705357142857139"/>
         </scene>
+        <!--Launch Detail View Controller-->
+        <scene sceneID="pGi-3C-5jt">
+            <objects>
+                <viewController storyboardIdentifier="LaunchDetailViewController" id="Nij-Y1-RKb" customClass="LaunchDetailViewController" customModule="Project_SpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBL-iJ-V2k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="huf-we-5zj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Sfn-By-Zid">
+                                <rect key="frame" x="16" y="745" width="382" height="101"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNx-nk-fLW">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="18.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="IbJ-9Y-elE">
+                                                <rect key="frame" x="0.0" y="0.0" width="282" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoN-gO-D5T">
+                                                <rect key="frame" x="282" y="0.0" width="100" height="18.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Ilj-PQ-FzD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whU-Y0-v1K">
+                                        <rect key="frame" x="0.0" y="34.5" width="382" height="66.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name="Futura-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mol-wh-oSc"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="huf-we-5zj" firstAttribute="leading" secondItem="Mol-wh-oSc" secondAttribute="leading" id="1Jr-qL-VAm"/>
+                            <constraint firstItem="huf-we-5zj" firstAttribute="top" secondItem="nBL-iJ-V2k" secondAttribute="top" id="CN4-5M-5gD"/>
+                            <constraint firstItem="Sfn-By-Zid" firstAttribute="leading" secondItem="Mol-wh-oSc" secondAttribute="leading" constant="16" id="DkJ-Cx-YrX"/>
+                            <constraint firstItem="Mol-wh-oSc" firstAttribute="trailing" secondItem="Sfn-By-Zid" secondAttribute="trailing" constant="16" id="Yhi-fr-ep3"/>
+                            <constraint firstItem="Sfn-By-Zid" firstAttribute="top" secondItem="huf-we-5zj" secondAttribute="bottom" constant="16" id="gTt-pP-kl8"/>
+                            <constraint firstItem="Mol-wh-oSc" firstAttribute="bottom" secondItem="Sfn-By-Zid" secondAttribute="bottom" constant="16" id="oB2-3P-EGd"/>
+                            <constraint firstItem="huf-we-5zj" firstAttribute="trailing" secondItem="Mol-wh-oSc" secondAttribute="trailing" id="r7d-1e-pgr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="missionDetailLabel" destination="whU-Y0-v1K" id="HMp-RG-EQV"/>
+                        <outlet property="missionImageView" destination="huf-we-5zj" id="YFq-3o-UMm"/>
+                        <outlet property="missionNameLabel" destination="IbJ-9Y-elE" id="WJI-qV-Fgr"/>
+                        <outlet property="missionYearLabel" destination="zoN-gO-D5T" id="fKk-GL-7eY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOj-kc-bAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2639.130434782609" y="83.705357142857139"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XzH-eQ-h7x">
             <objects>

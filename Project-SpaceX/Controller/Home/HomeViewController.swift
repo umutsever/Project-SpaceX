@@ -19,11 +19,10 @@ class HomeViewController: UIViewController {
             .init(flickr_images: ["https://live.staticflickr.com/65535/48954138962_ee541e6755_b.jpg"], rocket_name: "Falcon 4", rocket_id: "falcon")]
     
     var pastLaunches: [PastLaunchModel] = [
-        .init(mission_name: "Falcon", launch_year: "2006", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "Engine failure at 33 seconds and loss of vehicle"),
-        .init(mission_name: "Falcon", launch_year: "2006", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "Engine failure at 33 seconds and loss of vehicle"),
-        .init(mission_name: "Falcon", launch_year: "2006", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "Engine failure at 33 seconds and loss of vehicle"),
-        .init(mission_name: "Falcons", launch_year: "2006", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "Engine failure at 33 seconds and loss of vehicle"),
-        .init(mission_name: "Falcon", launch_year: "2006", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "Engine failure at 33 seconds and loss of vehicle")
+        .init(mission_name: "Falcon 9", launch_year: "2020", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."),
+        .init(mission_name: "Falcon 2", launch_year: "2020", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."),
+        .init(mission_name: "Falcon 5", launch_year: "2020", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."),
+        .init(mission_name: "Falcon 10", launch_year: "2020", links: "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png", details: "SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."),
     ]
     
     var upcomingLaunches: [UpcomingLaunchModel] = [
@@ -86,16 +85,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         default:
             return UICollectionViewCell()
         }
-        
-        
-        
-        
-        
-        
-        
-        
-      
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let controller = LaunchDetailViewController.instantiate()
+        controller.launchDetail = collectionView == pastLaunchesCollectionView ? pastLaunches[indexPath.row] : pastLaunches[indexPath.row]
+        navigationController?.pushViewController(controller, animated: true)
+        }
+        
+        
+    }
     
-}
+

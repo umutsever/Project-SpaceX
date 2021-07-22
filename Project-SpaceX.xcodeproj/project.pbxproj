@@ -19,6 +19,7 @@
 		11C17D2926AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C17D2726AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift */; };
 		11C17D2A26AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11C17D2826AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib */; };
 		11C17D2D26AA31FC0087C9B1 /* LaunchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C17D2C26AA31FC0087C9B1 /* LaunchDetailViewController.swift */; };
+		11C17D2F26AA33150087C9B1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C17D2E26AA33150087C9B1 /* UIViewController+Extension.swift */; };
 		11FAC36F26A84A39003D50D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC36E26A84A39003D50D8 /* AppDelegate.swift */; };
 		11FAC37126A84A39003D50D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC37026A84A39003D50D8 /* SceneDelegate.swift */; };
 		11FAC37326A84A39003D50D8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FAC37226A84A39003D50D8 /* OnboardingViewController.swift */; };
@@ -45,6 +46,7 @@
 		11C17D2726AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesCollectionViewCell.swift; sourceTree = "<group>"; };
 		11C17D2826AA23C60087C9B1 /* UpcomingLaunchesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingLaunchesCollectionViewCell.xib; sourceTree = "<group>"; };
 		11C17D2C26AA31FC0087C9B1 /* LaunchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewController.swift; sourceTree = "<group>"; };
+		11C17D2E26AA33150087C9B1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		11FAC36B26A84A39003D50D8 /* Project-SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-SpaceX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FAC36E26A84A39003D50D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FAC37026A84A39003D50D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			children = (
 				11FAC38826A84D6C003D50D8 /* UIView+Extension.swift */,
 				1132BC6B26A8BE570063FACC /* String+Extension.swift */,
+				11C17D2E26AA33150087C9B1 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				1132BC6A26A8BAB30063FACC /* RocketModel.swift in Sources */,
 				1132BC6726A8B8510063FACC /* RocketCollectionViewCell.swift in Sources */,
 				11FAC37326A84A39003D50D8 /* OnboardingViewController.swift in Sources */,
+				11C17D2F26AA33150087C9B1 /* UIViewController+Extension.swift in Sources */,
 				11FAC36F26A84A39003D50D8 /* AppDelegate.swift in Sources */,
 				11FAC38B26A84FC8003D50D8 /* OnboardingSlides.swift in Sources */,
 				11FAC38926A84D6C003D50D8 /* UIView+Extension.swift in Sources */,

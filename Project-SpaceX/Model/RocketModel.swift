@@ -10,5 +10,5 @@ import Foundation
 struct RocketModel {
     let flickr_images: [String]?
     let rocket_name: String
-    let rocket_id: String
+    let description: String
 }

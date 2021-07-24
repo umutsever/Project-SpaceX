@@ -15,19 +15,18 @@ class LaunchDetailViewController: UIViewController {
     @IBOutlet weak var missionYearLabel: UILabel!
     @IBOutlet weak var missionDetailLabel: UILabel!
     
-    var launchDetail: PastLaunchModel!
+    var launchDetail: LaunchModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
        populateView()
     }
     
     private func populateView() {
-        missionImageView.kf.setImage(with: launchDetail.links.asUrl)
-        missionNameLabel.text = launchDetail.mission_name
-        missionDetailLabel.text = launchDetail.details
-        missionYearLabel.text = launchDetail.launch_year
+        missionImageView.kf.setImage(with: launchDetail.links.patch.small?.asUrl ?? URL(string: "https://i.imgur.com/BrW201S.png"))
+        missionNameLabel.text = launchDetail.name
+        missionDetailLabel.text = launchDetail.details ?? "There is no specific information about this mission."
+        missionYearLabel.text = launchDetail.date_utc
     }
    
 

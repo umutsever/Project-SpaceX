@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Kingfisher
+
 
 class UpcomingLaunchesCollectionViewCell: UICollectionViewCell {
     
@@ -18,11 +18,12 @@ class UpcomingLaunchesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var missionDetailLabel: UILabel!
     
     
-    func setup(_ upcomingLunches: UpcomingLaunchModel) {
-        missionPatchImage.kf.setImage(with: upcomingLunches.links.asUrl)
-        missionNameLabel.text = upcomingLunches.mission_name
-        missionYearLabel.text = upcomingLunches.launch_year
-        missionDetailLabel.text = upcomingLunches.details
+    func setup(_ upcomingLunches: LaunchModel) {
+        
+        missionPatchImage.kf.setImage(with: upcomingLunches.links.patch.small?.asUrl ?? URL(string: "https://i.imgur.com/BrW201S.png"))
+        missionNameLabel.text = upcomingLunches.name
+        missionYearLabel.text = String(upcomingLunches.date_utc.dropLast(14))
+        missionDetailLabel.text = upcomingLunches.details ?? "There is no specific information about this mission."
     }
 
 }

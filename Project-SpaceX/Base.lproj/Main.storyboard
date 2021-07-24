@@ -223,18 +223,9 @@
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="15" minY="0.0" maxX="75" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="15" minY="0.0" maxX="100" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
-                                                        <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0G2-eQ-GLW">
-                                                                <rect key="frame" x="15" y="0.0" width="128" height="128"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kYe-D6-EpO">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                            </collectionViewCell>
-                                                        </cells>
+                                                        <cells/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="e49-lz-J8f" id="A3f-vT-LKY"/>
                                                             <outlet property="delegate" destination="e49-lz-J8f" id="p0M-c6-xs0"/>
@@ -409,6 +400,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOj-kc-bAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2639.130434782609" y="83.705357142857139"/>
+        </scene>
+        <!--Rocket Detail View Controller-->
+        <scene sceneID="O7F-IY-04h">
+            <objects>
+                <viewController storyboardIdentifier="RocketDetailViewController" id="zhz-J8-k94" customClass="RocketDetailViewController" customModule="Project_SpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TjR-zg-JaG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2rU-ya-MnF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="754.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zhz-J8-k94" id="KCu-N1-M80"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rA9-jD-Vbh">
+                                <rect key="frame" x="8" y="762.5" width="398" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocket Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Z-aX-BA6">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-Ww-cb9">
+                                        <rect key="frame" x="0.0" y="18.5" width="398" height="73"/>
+                                        <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jX3-Zg-SbO"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2rU-ya-MnF" firstAttribute="trailing" secondItem="jX3-Zg-SbO" secondAttribute="trailing" id="I0V-Uq-RE0"/>
+                            <constraint firstItem="2rU-ya-MnF" firstAttribute="top" secondItem="TjR-zg-JaG" secondAttribute="top" id="JfI-se-RRn"/>
+                            <constraint firstItem="rA9-jD-Vbh" firstAttribute="leading" secondItem="jX3-Zg-SbO" secondAttribute="leading" constant="8" id="OVg-qv-ddX"/>
+                            <constraint firstItem="jX3-Zg-SbO" firstAttribute="trailing" secondItem="rA9-jD-Vbh" secondAttribute="trailing" constant="8" id="Yno-pv-Sse"/>
+                            <constraint firstItem="rA9-jD-Vbh" firstAttribute="top" secondItem="2rU-ya-MnF" secondAttribute="bottom" constant="8" id="hOe-ir-wk0"/>
+                            <constraint firstItem="jX3-Zg-SbO" firstAttribute="bottom" secondItem="rA9-jD-Vbh" secondAttribute="bottom" constant="8" id="qji-i5-ha5"/>
+                            <constraint firstItem="2rU-ya-MnF" firstAttribute="leading" secondItem="jX3-Zg-SbO" secondAttribute="leading" id="s1x-Pw-KAs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rocketDetailLabel" destination="2iu-Ww-cb9" id="jWX-o0-Z7C"/>
+                        <outlet property="rocketDetailTableView" destination="2rU-ya-MnF" id="CBE-0S-XKb"/>
+                        <outlet property="rocketNameLabel" destination="Q9Z-aX-BA6" id="XF4-lh-tE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeQ-5B-WIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3434.7826086956525" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XzH-eQ-h7x">

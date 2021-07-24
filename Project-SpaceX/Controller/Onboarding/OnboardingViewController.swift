@@ -33,9 +33,9 @@ class OnboardingViewController: UIViewController {
     
     func fillSlides() {
         slides = [
-            OnboardingSlides(title: "Delicious Dishes", description: "Experience a variety of amazing dishes from different cultures around the world.", image: #imageLiteral(resourceName: "slide2")),
-            OnboardingSlides(title: "World-Class Chefs", description: "Our dishes are prepared by only the best.", image: #imageLiteral(resourceName: "slide3")),
-            OnboardingSlides(title: "Instant World-Wide Delivery", description: "Your orders will be delivered instantly irrespective of your location around the world.", image: #imageLiteral(resourceName: "slide1"))
+            OnboardingSlides(title: "Welcome On Board!", description: "This is my iOS app that exemplify some of my skills by using SpaceX API.", image: #imageLiteral(resourceName: "slide2")),
+            OnboardingSlides(title: "What is SpaceX API?", description: "The SpaceX-API project is an Open Source REST API for rocket, core, capsule, pad, and launch data.", image: #imageLiteral(resourceName: "slide3")),
+            OnboardingSlides(title: "What awaits you?", description: "You can access rocket details, past and upcoming launches and details in different sections.", image: #imageLiteral(resourceName: "slide1"))
         ]
         
         pageControl.numberOfPages = slides.count

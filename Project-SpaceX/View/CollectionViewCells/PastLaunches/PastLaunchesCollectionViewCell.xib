@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8M-uV-esi" customClass="CardView" customModule="Project_SpaceX" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-bn-Qsy">
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-bn-Qsy">
                                 <rect key="frame" x="8" y="8" width="164" height="284"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agW-2s-ive">
@@ -29,18 +29,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-d0-OVs">
-                                        <rect key="frame" x="0.0" y="30.5" width="164" height="203"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-d0-OVs">
+                                        <rect key="frame" x="0.0" y="30.5" width="164" height="205.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KM-Rk-TjG">
-                                        <rect key="frame" x="0.0" y="241.5" width="164" height="16"/>
+                                        <rect key="frame" x="0.0" y="244" width="164" height="16"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                         <color key="textColor" systemColor="systemPinkColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOG-qY-AU8">
-                                        <rect key="frame" x="0.0" y="265.5" width="164" height="18.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="268" width="164" height="16"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -68,12 +68,12 @@
             </constraints>
             <size key="customSize" width="223" height="301"/>
             <connections>
-                <outlet property="launchDetailLabel" destination="iOG-qY-AU8" id="4Ev-cY-a0z"/>
-                <outlet property="launchYearLabel" destination="8KM-Rk-TjG" id="YQf-2B-Z0G"/>
+                <outlet property="launchSuccessLabel" destination="8KM-Rk-TjG" id="eh3-uN-0vQ"/>
+                <outlet property="launchYearLabel" destination="iOG-qY-AU8" id="y9H-DC-cI9"/>
                 <outlet property="missionNameLabel" destination="agW-2s-ive" id="mKI-Xy-5jD"/>
                 <outlet property="missionPatchImage" destination="LEZ-d0-OVs" id="MYm-cc-O3z"/>
             </connections>
-            <point key="canvasLocation" x="192.0289855072464" y="159.04017857142856"/>
+            <point key="canvasLocation" x="191.30434782608697" y="158.70535714285714"/>
         </collectionViewCell>
     </objects>
     <resources>

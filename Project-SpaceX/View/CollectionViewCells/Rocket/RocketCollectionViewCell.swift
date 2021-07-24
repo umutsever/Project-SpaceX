@@ -17,7 +17,7 @@ class RocketCollectionViewCell: UICollectionViewCell {
     
     func setup(_ rocket: RocketModel) {
         rocketImageView.kf.setImage(with: rocket.flickr_images?[0].asUrl)
-        rocketNameLabel.text = rocket.rocket_name
+        rocketNameLabel.text = rocket.name
         
     }
 

@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmc-nm-vtq" customClass="CardView" customModule="Project_SpaceX" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="97"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-70-kbm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-70-kbm">
                                 <rect key="frame" x="8" y="10" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="chP-CB-LED"/>

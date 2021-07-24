@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wml-AW-lYJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -336,40 +336,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="huf-we-5zj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="huf-we-5zj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="679"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Sfn-By-Zid">
-                                <rect key="frame" x="16" y="745" width="382" height="101"/>
+                                <rect key="frame" x="16" y="695" width="382" height="151"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNx-nk-fLW">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="18.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="IbJ-9Y-elE">
-                                                <rect key="frame" x="0.0" y="0.0" width="282" height="18.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="262" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoN-gO-D5T">
-                                                <rect key="frame" x="282" y="0.0" width="100" height="18.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoN-gO-D5T">
+                                                <rect key="frame" x="262" y="0.0" width="120" height="18.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="Ilj-PQ-FzD"/>
+                                                    <constraint firstAttribute="width" constant="120" id="Ilj-PQ-FzD"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whU-Y0-v1K">
-                                        <rect key="frame" x="0.0" y="34.5" width="382" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="34.5" width="382" height="116.5"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel">
+                                            <fragment>
+                                                <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="15" name="Futura-Medium"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                    <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="13" name="Futura-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="leftToRight" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -382,7 +383,7 @@
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="huf-we-5zj" firstAttribute="leading" secondItem="Mol-wh-oSc" secondAttribute="leading" id="1Jr-qL-VAm"/>
-                            <constraint firstItem="huf-we-5zj" firstAttribute="top" secondItem="nBL-iJ-V2k" secondAttribute="top" id="CN4-5M-5gD"/>
+                            <constraint firstItem="huf-we-5zj" firstAttribute="top" secondItem="Mol-wh-oSc" secondAttribute="top" constant="-44" id="CN4-5M-5gD"/>
                             <constraint firstItem="Sfn-By-Zid" firstAttribute="leading" secondItem="Mol-wh-oSc" secondAttribute="leading" constant="16" id="DkJ-Cx-YrX"/>
                             <constraint firstItem="Mol-wh-oSc" firstAttribute="trailing" secondItem="Sfn-By-Zid" secondAttribute="trailing" constant="16" id="Yhi-fr-ep3"/>
                             <constraint firstItem="Sfn-By-Zid" firstAttribute="top" secondItem="huf-we-5zj" secondAttribute="bottom" constant="16" id="gTt-pP-kl8"/>
@@ -400,62 +401,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOj-kc-bAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2639.130434782609" y="83.705357142857139"/>
-        </scene>
-        <!--Rocket Detail View Controller-->
-        <scene sceneID="O7F-IY-04h">
-            <objects>
-                <viewController storyboardIdentifier="RocketDetailViewController" id="zhz-J8-k94" customClass="RocketDetailViewController" customModule="Project_SpaceX" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TjR-zg-JaG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2rU-ya-MnF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="754.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="zhz-J8-k94" id="KCu-N1-M80"/>
-                                </connections>
-                            </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rA9-jD-Vbh">
-                                <rect key="frame" x="8" y="762.5" width="398" height="91.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocket Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Z-aX-BA6">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="18.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-Ww-cb9">
-                                        <rect key="frame" x="0.0" y="18.5" width="398" height="73"/>
-                                        <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="jX3-Zg-SbO"/>
-                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="2rU-ya-MnF" firstAttribute="trailing" secondItem="jX3-Zg-SbO" secondAttribute="trailing" id="I0V-Uq-RE0"/>
-                            <constraint firstItem="2rU-ya-MnF" firstAttribute="top" secondItem="TjR-zg-JaG" secondAttribute="top" id="JfI-se-RRn"/>
-                            <constraint firstItem="rA9-jD-Vbh" firstAttribute="leading" secondItem="jX3-Zg-SbO" secondAttribute="leading" constant="8" id="OVg-qv-ddX"/>
-                            <constraint firstItem="jX3-Zg-SbO" firstAttribute="trailing" secondItem="rA9-jD-Vbh" secondAttribute="trailing" constant="8" id="Yno-pv-Sse"/>
-                            <constraint firstItem="rA9-jD-Vbh" firstAttribute="top" secondItem="2rU-ya-MnF" secondAttribute="bottom" constant="8" id="hOe-ir-wk0"/>
-                            <constraint firstItem="jX3-Zg-SbO" firstAttribute="bottom" secondItem="rA9-jD-Vbh" secondAttribute="bottom" constant="8" id="qji-i5-ha5"/>
-                            <constraint firstItem="2rU-ya-MnF" firstAttribute="leading" secondItem="jX3-Zg-SbO" secondAttribute="leading" id="s1x-Pw-KAs"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="rocketDetailLabel" destination="2iu-Ww-cb9" id="jWX-o0-Z7C"/>
-                        <outlet property="rocketDetailTableView" destination="2rU-ya-MnF" id="CBE-0S-XKb"/>
-                        <outlet property="rocketNameLabel" destination="Q9Z-aX-BA6" id="XF4-lh-tE5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JeQ-5B-WIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3434.7826086956525" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XzH-eQ-h7x">

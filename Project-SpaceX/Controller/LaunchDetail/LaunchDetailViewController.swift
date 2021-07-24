@@ -26,7 +26,8 @@ class LaunchDetailViewController: UIViewController {
         missionImageView.kf.setImage(with: launchDetail.links.patch.small?.asUrl ?? URL(string: "https://i.imgur.com/BrW201S.png"))
         missionNameLabel.text = launchDetail.name
         missionDetailLabel.text = launchDetail.details ?? "There is no specific information about this mission."
-        missionYearLabel.text = launchDetail.date_utc
+        missionYearLabel.text = String(launchDetail.date_utc.dropLast(14))
+        title = launchDetail.name
     }
    
 

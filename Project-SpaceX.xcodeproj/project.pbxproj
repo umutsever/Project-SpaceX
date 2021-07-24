@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1116CAAF26AAE63800C1CB27 /* RocketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116CAAE26AAE63800C1CB27 /* RocketDetailViewController.swift */; };
 		1116CAB326AAE6CE00C1CB27 /* RocketDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116CAB126AAE6CE00C1CB27 /* RocketDetailTableViewCell.swift */; };
 		1116CAB426AAE6CE00C1CB27 /* RocketDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1116CAB226AAE6CE00C1CB27 /* RocketDetailTableViewCell.xib */; };
 		1116CAB826AB274400C1CB27 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116CAB726AB274400C1CB27 /* LaunchModel.swift */; };
@@ -40,7 +39,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1116CAAE26AAE63800C1CB27 /* RocketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewController.swift; sourceTree = "<group>"; };
 		1116CAB126AAE6CE00C1CB27 /* RocketDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailTableViewCell.swift; sourceTree = "<group>"; };
 		1116CAB226AAE6CE00C1CB27 /* RocketDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RocketDetailTableViewCell.xib; sourceTree = "<group>"; };
 		1116CAB726AB274400C1CB27 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
@@ -88,14 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1116CAAD26AAE62400C1CB27 /* RocketDetail */ = {
-			isa = PBXGroup;
-			children = (
-				1116CAAE26AAE63800C1CB27 /* RocketDetailViewController.swift */,
-			);
-			path = RocketDetail;
-			sourceTree = "<group>";
-		};
 		1116CAB026AAE68100C1CB27 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +197,6 @@
 		11FAC38226A84AC1003D50D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1116CAAD26AAE62400C1CB27 /* RocketDetail */,
 				11C17D2B26AA31CC0087C9B1 /* LaunchDetail */,
 				11FAC38F26A85F44003D50D8 /* Home */,
 				11FAC38526A84AE7003D50D8 /* Onboarding */,
@@ -414,7 +403,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1116CAAF26AAE63800C1CB27 /* RocketDetailViewController.swift in Sources */,
 				11C17D2D26AA31FC0087C9B1 /* LaunchDetailViewController.swift in Sources */,
 				1132BC6A26A8BAB30063FACC /* RocketModel.swift in Sources */,
 				1132BC6726A8B8510063FACC /* RocketCollectionViewCell.swift in Sources */,

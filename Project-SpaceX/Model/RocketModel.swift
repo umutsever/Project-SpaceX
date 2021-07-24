@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct RocketModel {
+struct RocketModel: Codable {
     let flickr_images: [String]?
-    let rocket_name: String
-    let description: String
+    let name: String
 }

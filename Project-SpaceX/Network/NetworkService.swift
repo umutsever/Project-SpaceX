@@ -21,6 +21,10 @@ struct NetworkService {
         
     }
     
+    func getRockets(completion: @escaping(Result<[RocketModel], Error>) -> Void) {
+        request(route: .rocket, method: .get, completion: completion)
+        
+    }
    
     
      func request<T: Codable>(route: Route,

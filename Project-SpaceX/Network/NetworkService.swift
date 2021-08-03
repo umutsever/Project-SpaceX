@@ -8,19 +8,15 @@
 import Foundation
 
 struct NetworkService {
-    
     static let shared = NetworkService()
     private init() {}
     
     func getPastLaunch(completion: @escaping(Result<[LaunchModel], Error>) -> Void) {
             request(route: .past, method: .get, completion: completion)
-        
     }
     func getUpcomingLaunch(completion: @escaping(Result<[LaunchModel], Error>) -> Void) {
         request(route: .upcoming, method: .get, completion: completion)
-        
     }
-    
     func getRockets(completion: @escaping(Result<[RocketModel], Error>) -> Void) {
         request(route: .rocket, method: .get, completion: completion)
         
@@ -42,9 +38,8 @@ struct NetworkService {
             var result: Result<Data, Error>?
             if let data = data {
                 result = .success(data)
-                let responseString = String(data: data, encoding: .utf8) ?? "Data could not be stringify"
+                //let responseString = String(data: data, encoding: .utf8) ?? "Data could not be stringify"
                 //print("The response is:\n\(responseString)")
-                
             } else if let error = error {
                 result = .failure(error)
                 print(error.localizedDescription)
@@ -74,20 +69,11 @@ struct NetworkService {
                 completion(.failure(AppError.errorDecoding))
                 return
             }
-            
             completion(.success(response))
-            
-//            if let decodedData = response.self {
-//                completion(.success(decodedData))
-//            } else {
-//                completion(.failure(AppError.unknown))
-//            }
         case .failure(let error):
             completion(.failure(error))
         }
     }
-    
-    
     
      private func createRequest(route: Route,
                                method: Method,

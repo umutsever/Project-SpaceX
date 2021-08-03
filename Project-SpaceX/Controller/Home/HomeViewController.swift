@@ -21,12 +21,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         ProgressHUD.show("Loading.. 🚀")
         registerCell()
-      
-            getRequest()
-        
-        
-        
-        
+        getRequest()
     }
     
     private func getRequest() {

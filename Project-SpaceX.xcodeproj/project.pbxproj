@@ -180,16 +180,13 @@
 		11FAC36D26A84A39003D50D8 /* Project-SpaceX */ = {
 			isa = PBXGroup;
 			children = (
-				1116CABB26AB34DB00C1CB27 /* Network */,
 				11FAC38726A84D51003D50D8 /* Extensions */,
-				11FAC38626A84AF8003D50D8 /* Supporting Files */,
+				1116CABB26AB34DB00C1CB27 /* Network */,
 				11FAC38426A84AD7003D50D8 /* Model */,
 				11FAC38326A84AD1003D50D8 /* View */,
 				11FAC38226A84AC1003D50D8 /* Controller */,
-				11FAC37426A84A39003D50D8 /* Main.storyboard */,
-				11FAC37726A84A3C003D50D8 /* Assets.xcassets */,
-				11FAC37926A84A3C003D50D8 /* LaunchScreen.storyboard */,
 				11FAC37C26A84A3C003D50D8 /* Info.plist */,
+				11FAC38626A84AF8003D50D8 /* Supporting Files */,
 			);
 			path = "Project-SpaceX";
 			sourceTree = "<group>";
@@ -207,6 +204,8 @@
 		11FAC38326A84AD1003D50D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11FAC37426A84A39003D50D8 /* Main.storyboard */,
+				11FAC37926A84A3C003D50D8 /* LaunchScreen.storyboard */,
 				1116CAB026AAE68100C1CB27 /* TableViewCells */,
 				1132BC6D26A8C60E0063FACC /* CardView */,
 				1132BC6426A8B7FD0063FACC /* CollectionViewCells */,
@@ -236,6 +235,7 @@
 		11FAC38626A84AF8003D50D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11FAC37726A84A3C003D50D8 /* Assets.xcassets */,
 				11FAC36E26A84A39003D50D8 /* AppDelegate.swift */,
 				11FAC37026A84A39003D50D8 /* SceneDelegate.swift */,
 			);
